@@ -1,0 +1,29 @@
+.footer {
+    
+    color: rgb(182, 214, 194);
+    background-color: #1d5555;
+    padding-top: 3em;
+    font-family: 'Montserrat',
+            sans-serif;
+    bottom: 0;
+    width: 100%;
+
+}
+.title{
+    font-size: 19px;
+}
+.rows{
+    font-size: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 900px){
+    .rows{
+       width: 200px !important;
+    }
+    .p{
+        width: 300px !important;
+    }
+}

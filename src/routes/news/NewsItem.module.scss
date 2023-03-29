@@ -1,0 +1,84 @@
+// mixin ~ scss function with params
+ @mixin line-clamp($numLines : 1, $lineHeight: 1.412) {
+  overflow: hidden;
+  text-overflow: -o-ellipsis-lastline;
+  text-overflow: ellipsis;
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: $numLines;
+  -webkit-box-orient: vertical;
+  max-height: $numLines * $lineHeight + unquote('em');
+/* text-align: justify; */
+text-align: center;
+    text-justify: inter-word;
+ /*  text-align: justify;
+  text-justify: distribute; */
+} 
+/* .item{
+
+      background-color: #f0e1ea; 
+      margin: 0 !important;
+      width: 35vw;
+      height: 400px;
+    font-family: 'Secular One', sans-serif !important; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+   
+} */
+.item{
+    background-color: rgb(246, 248, 248);
+    
+}
+/* .item:hover{
+    box-shadow: 1px 1px rgb(255, 255, 255) !important;
+        border-radius: 5px !important;
+
+} */
+
+.title{
+    text-align: center;
+    margin: 18.3px;
+    padding: 3px;
+    width: 80%;
+    background-color: #f5edf1;
+    box-shadow: 5px 5px rgb(197, 224, 220);
+    border-radius: 5px;
+    @include line-clamp($numLines: 2, $lineHeight: 2 );
+    font-size: 18px;
+    
+}
+
+.link{
+    margin-top: 9.5px;
+    padding: 3px;
+    text-decoration: none;
+    
+  
+    color: rgb(10, 10, 10);
+   
+    
+    border-radius: 5px;
+    &::after{
+        content: '...';
+    }
+}
+.link:hover{
+    color: #ffffff;
+    background-color: rgb(237, 212, 238);
+    box-shadow: 5px 5px rgb(168, 207, 201);
+}
+.image{
+    height: 210px !important;
+}
+
+@media (max-width: 900px){
+    .image{
+        height: 90px !important;
+    }
+   
+  
+}
+
+

@@ -1,0 +1,114 @@
+.bg {
+    position: absolute;
+    margin-left: 70px;
+    
+    border-radius: 4px;
+    box-shadow: 3px 3px rgb(206, 189, 189);
+    width: 260px;
+}
+
+.background {
+   /*  background-color: rgb(232, 245, 243) !important; */
+background-color: rgb(241, 247, 246) !important;
+}
+
+.comp {
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 80px;
+    border-radius: 4px;
+    box-shadow: 3px 4px rgb(206, 189, 189);
+    width: 280px;
+}
+
+.girl {
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 200px;
+    border-radius: 4px;
+    box-shadow: 3px 6px rgb(206, 189, 189);
+    width: 340px;
+}
+
+.connection {
+    width: 40vw;
+}
+
+.text {
+   
+    
+    text-align: justify;
+    text-justify: inter-word; 
+    width: 500px;
+    padding: 50px;
+
+    border: 1px solid rgb(201, 175, 175);
+    border-radius: 4px;
+    box-shadow: 5px 10px rgb(201, 175, 175);
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(244, 240, 245);
+}
+
+.boxes {
+    display: flex;
+    
+   
+}
+
+.we {
+    margin: 20px;
+}
+
+.machine {
+    margin: 20px;
+}
+
+.bots {
+    display: flex;
+    margin-top: 70px;
+}
+
+.bots2 {
+    justify-content: center;
+    margin-top: 550px;
+    text-align: center;
+    align-items: center;
+}
+
+.bot{
+
+    margin-top: 1500px;
+}
+
+
+@media (max-width: 900px) {
+    .girl {
+    display: none;
+
+    }
+
+    .bg {
+        display: none;
+    }
+
+    .comp {
+        display: none;
+    } 
+    
+    .text{
+        width: 70vw;
+        padding: 20px;
+        
+        margin: auto;
+        
+        
+        padding: 20px;
+    }
+    .boxes{
+        flex-direction: column;
+    }
+ 
+    
+
+
+}

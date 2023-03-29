@@ -1,0 +1,38 @@
+
+.background{
+    background-color: rgb(242, 247, 247);  
+   
+  
+}
+.headerbots{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bot:hover{
+ transform: translate(0.4);
+
+}
+.bots{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-self: center;
+    margin: auto;
+    
+}
+.bots2 {
+    margin-top: 100px;
+justify-content: center;
+   display: flex;
+   flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+@media (max-width: 700px){
+    .headerbots{
+        width: 200px !important;
+    }
+}

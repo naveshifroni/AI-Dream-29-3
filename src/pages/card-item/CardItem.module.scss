@@ -1,0 +1,38 @@
+.preview{
+    width: 274px;
+    text-align: center;
+    margin: auto;
+}
+.item{
+    padding: 5px;
+    display: flex;
+    width: 310px;
+    margin: 30px;
+    justify-content: center;
+    background-color: rgb(214, 183, 183);
+    height: 590px;
+
+}
+.description{
+    padding: 10px;
+    margin: 5px;
+}
+ .buttons{
+    width: 220px;
+    background-color: rgb(247, 242, 242) !important;
+} 
+.buttons:hover{
+    background-color: #b4eef0 !important;
+}
+
+@media (max-width: 900px) {
+    .item{
+        width: 78vw;
+    }
+    .preview{
+        width: 56vw;
+    }
+    .buttons{
+        width: 40vw;
+    }
+}
